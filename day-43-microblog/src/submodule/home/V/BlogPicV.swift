@@ -52,16 +52,16 @@ class BlogPicV: UICollectionView,UICollectionViewDelegate,UICollectionViewDataSo
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        print("touch")
-    }
-    
+//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        print("touch")
+//    }
+//    
 }
 
 
 extension BlogPicV:SDPhotoBrowserDelegate{
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        print(pics?.count ?? 0)
+        
         return pics?.count ?? 0
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
